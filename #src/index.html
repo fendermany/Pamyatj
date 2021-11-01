@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<div class="promo">
+				<div class="promo__container _container">
+					<div class="promo__body">
+						<div class="promo__title title_36">Частная Ритуальная Служба<br> ”Память”</div>
+						<div class="promo__descr title_20">
+							Полный цикл ритуальных услуг.<br>
+							Мы рядом, когда это действительно нужно.
+						</div>
+						<div class="promo__btns">
+							<a href="#" class="button button_yellow">Организация похорон</a>
+							<a href="#" class="button button_transparent">Организация кремации</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="advantages">
+				<div class="advantages__container _container">
+					<div class="advantages__body">
+						<div class="advantages__item">
+							<img src="img/time.svg" alt="time">
+							<span>
+								Быстрое решение всех бюрократических проблем
+							</span>
+						</div>
+						<div class="advantages__item">
+							<img src="img/search.svg" alt="search">
+							<span>
+								Поиск оптимального места захоронения
+							</span>
+						</div>
+						<div class="advantages__item">
+							<img src="img/people.svg" alt="people">
+							<span>
+								Организация поминальных ритуалов
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="services">
+				<div class="servcies__container _container">
+					<div class="services__title title_36">
+						Ритуальные услуги
+					</div>
+					<div class="services__descr title_20">
+						Частная ритуальная служба “Память” выполняет широкий спектр услуг по захоронению и кремации усопших, а
+						также предоставляет возможность купить товары ритуального характера по доступным ценам
+					</div>
+					<div class="services__body">
+						<div class="services__item">
+							<div class="services__item-img"></div>
+							<div class="services__item-title">Организация похорон</div>
+							<div class="services__item-descr">
+								Мы предоставляем полный спектр услуг по вопросам захоронения и кремации
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-img"></div>
+							<div class="services__item-title">Товары ритуального характера</div>
+							<div class="services__item-descr">
+								Широкий спектр выбора ритуальных принадлежностей
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-img"></div>
+							<div class="services__item-title">Ритуальный транспорт</div>
+							<div class="services__item-descr">
+								Предоставляем транспорт разного вида для перевозки усопшего на всех стадяих процесса захоронения
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-img"></div>
+							<div class="services__item-title">Услуги по отпеванию</div>
+							<div class="services__item-descr">
+								Привлечение церковных служателей для процедуры отпевания и ведения службы по канону </div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-img"></div>
+							<div class="services__item-title">Услуги по панахиде</div>
+							<div class="services__item-descr">
+								Организация траурных залов, полный комплекс процедуры панахиды со всеми мелочами </div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-img"></div>
+							<div class="services__item-title">Сопровождение</div>
+							<div class="services__item-descr">
+								Можем предоставить ритуальных грузчиков по месту жительства усопшего, а также на месте
+								захоронения </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="do">
+				<div class="do__container _container">
+					<div class="do__title title_36">Что делать если умер близкий?</div>
+					<div class="do__body">
+						<div class="do__item">
+							<div class="do__item-img">
+								<img src="img/house.svg" alt="house">
+							</div>
+							<div class="do__item-title">Дома</div>
+							<div class="do__item-descr">
+								Вызовите скорую помощь и полицию<br><br>
+								Позвоните в частную ритуальную службу “Память”
+								и получите интсрукцию по дальнейшим действиям<br><br>
+								Дождитесь ритуального агента
+							</div>
+						</div>
+						<div class="do__item">
+							<div class="do__item-img">
+								<img src="img/med.svg" alt="med">
+							</div>
+							<div class="do__item-title">В больнице</div>
+							<div class="do__item-descr">
+								Свяжитесь с администрацией больницы<br><br>
+								Позвоните в частную ритуальную службу “Память”
+								и получите интсрукцию по дальнейшим действиям<br><br>
+								Дождитесь ритуального агента
+							</div>
+						</div>
+					</div>
+					<div class="do__btn button button__grey">Получить консультацию</div>
+				</div>
+			</div>
+			<div class="feedback">
+				<div class="feedback__container _container">
+					<div class="feedback__title title_36">Получите бесплатную консультацию</div>
+					<div class="feedback__descr title_20">Оставьте свои данные и наш менеджер по ритуальным услугам свяжеться
+						с вами</div>
+					<div class="feedback__body">
+						<div class="feedback__form">
+							<form data-ajax="true" method="post" data-test action="sendmail.php">
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="name" data-error="Ошибка"
+										data-value="Введите имя" class="input req">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="surname" data-error="Ошибка"
+										data-value="Введите фамилию" class="input req">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="fathername" data-error="Ошибка"
+										data-value="Введите отчетство" class="input req">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="phone" data-error="Ошибка"
+										data-value="Введите номер телефона" class="input req _phone">
+								</div>
+								<button type="submit" class="form__btn btn button button_grey">Заказать звонок</button>
+							</form>
+							<div class="title_20 tac">
+								Если у Вас есть необходимо срочно связаться с нами, то просто позвоните по номеру:
+							</div>
+							<a href="tel:74953325857" class="feedback__phone">+7 (495) 332 58 57</a>
+							<span class="feedback__24">КРУГЛОСУТОЧНО</span>
+						</div>
+						<div class="feedback__img _ibg">
+							<img src="img/feedback.png" alt="feedback">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="packages">
+				<div class="packages__container _container">
+					<div class="packages__title title_36">Пакет цен по стандартному захоронению</div>
+					<div class="packages__body">
+						<div class="packages__item package">
+							<div class="package__title">Бюджетный</div>
+							<div class="package__list">
+								<li>доставка ритуальных
+									товаров</li>
+								<li>покрывало эконом</li>
+								<li>крест металический</li>
+								<li>подушка эконом</li>
+								<li>перевозка
+									морг-кладбище</li>
+								<li>вызов агента</li>
+								<li>постель эконом</li>
+								<li>гроб эконом</li>
+							</div>
+							<div class="package__price">от 11 000 рублей</div>
+							<div class="package__nb">*точная цена после консультации</div>
+							<div class="package__btn button button_yellow">Заказать</div>
+						</div>
+						<div class="packages__item package">
+							<div class="package__title">Стандарт</div>
+							<div class="package__list">
+								<li>доставка ритуальных
+									товаров</li>
+								<li>гроб обитый тканью</li>
+								<li>крест металический</li>
+								<li>лента стандарт - 2шт.</li>
+								<li>покрывало атлас</li>
+								<li>перевозка 
+									морг-кладбище</li>
+									<li>подушка атлас</li>
+								<li>вызов агента</li>
+								<li>табличка</li>
+								<li>постель</li>
+							</div>
+							<div class="package__price">от 17 650 рублей</div>
+							<div class="package__nb">*точная цена после консультации</div>
+							<div class="package__btn button button_yellow">Заказать</div>
+						</div>
+						<div class="packages__item package">
+							<div class="package__title">Бюджетный</div>
+							<div class="package__list">
+								<li>доставка ритуальных
+									товаров</li>
+								<li>покрывало эконом</li>
+								<li>крест металический</li>
+								<li>подушка эконом</li>
+								<li>перевозка
+									морг-кладбище</li>
+								<li>вызов агента</li>
+								<li>постель эконом</li>
+								<li>гроб эконом</li>
+							</div>
+							<div class="package__price">от 11 000 рублей</div>
+							<div class="package__nb">*точная цена после консультации</div>
+							<div class="package__btn button button_yellow">Заказать</div>
+						</div>
+						<div class="packages__item package">
+							<div class="package__title">Бюджетный</div>
+							<div class="package__list">
+								<li>доставка ритуальных
+									товаров</li>
+								<li>покрывало эконом</li>
+								<li>крест металический</li>
+								<li>подушка эконом</li>
+								<li>перевозка
+									морг-кладбище</li>
+								<li>вызов агента</li>
+								<li>постель эконом</li>
+								<li>гроб эконом</li>
+							</div>
+							<div class="package__price">от 11 000 рублей</div>
+							<div class="package__nb">*точная цена после консультации</div>
+							<div class="package__btn button button_yellow">Заказать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="packages">
+				<div class="packages__container _container">
+					<div class="packages__title title_36">Пакет цен по кремации</div>
+					<div class="packages__body">
+						<div class="packages__item package">
+							<div class="package__title">Бюджетный</div>
+							<div class="package__list">
+								<li>доставка ритуальных
+									товаров</li>
+								<li>покрывало эконом</li>
+								<li>крест металический</li>
+								<li>подушка эконом</li>
+								<li>перевозка
+									морг-кладбище</li>
+								<li>вызов агента</li>
+								<li>постель эконом</li>
+								<li>гроб эконом</li>
+							</div>
+							<div class="package__price">от 11 000 рублей</div>
+							<div class="package__nb">*точная цена после консультации</div>
+							<div class="package__btn button button_yellow">Заказать</div>
+						</div>
+						<div class="packages__item package">
+							<div class="package__title">Стандарт</div>
+							<div class="package__list">
+								<li>доставка ритуальных
+									товаров</li>
+								<li>гроб обитый тканью</li>
+								<li>крест металический</li>
+								<li>лента стандарт - 2шт.</li>
+								<li>покрывало атлас</li>
+								<li>перевозка 
+									морг-кладбище</li>
+									<li>подушка атлас</li>
+								<li>вызов агента</li>
+								<li>табличка</li>
+								<li>постель</li>
+							</div>
+							<div class="package__price">от 17 650 рублей</div>
+							<div class="package__nb">*точная цена после консультации</div>
+							<div class="package__btn button button_yellow">Заказать</div>
+						</div>
+						<div class="packages__item package">
+							<div class="package__title">Бюджетный</div>
+							<div class="package__list">
+								<li>доставка ритуальных
+									товаров</li>
+								<li>покрывало эконом</li>
+								<li>крест металический</li>
+								<li>подушка эконом</li>
+								<li>перевозка
+									морг-кладбище</li>
+								<li>вызов агента</li>
+								<li>постель эконом</li>
+								<li>гроб эконом</li>
+							</div>
+							<div class="package__price">от 11 000 рублей</div>
+							<div class="package__nb">*точная цена после консультации</div>
+							<div class="package__btn button button_yellow">Заказать</div>
+						</div>
+						<div class="packages__item package">
+							<div class="package__title">Бюджетный</div>
+							<div class="package__list">
+								<li>доставка ритуальных
+									товаров</li>
+								<li>покрывало эконом</li>
+								<li>крест металический</li>
+								<li>подушка эконом</li>
+								<li>перевозка
+									морг-кладбище</li>
+								<li>вызов агента</li>
+								<li>постель эконом</li>
+								<li>гроб эконом</li>
+							</div>
+							<div class="package__price">от 11 000 рублей</div>
+							<div class="package__nb">*точная цена после консультации</div>
+							<div class="package__btn button button_yellow">Заказать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="products">
+				<div class="products__container _container">
+					<div class="products__title title_36">Популярные товары</div>
+					<div class="products__body">
+						<div class="products__subtitle">Гробы</div>
+						<div class="products__navigation">
+							<div class="products__slider-next"></div>
+							<div class="products__slider-prev"></div>
+						</div>
+						<div class="products__slider _swiper">
+							<div class="products__item product">
+								<div class="product__item-img _ibg">
+									<img src="img/card.png" alt="card">
+								</div>
+								<div class="product__name">“Классика” белый</div>
+								<div class="product__descr">ФКЛ-6Б</div>
+								<a href="#" class="product__btn button button_mini button_yellow">
+									Заказать
+								</a>
+								<a href="#" class="product__more">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="products">
+				<div class="products__container _container">
+					<div class="products__body">
+						<div class="products__subtitle">Кресты</div>
+						<div class="products__navigation">
+							<div class="products2__slider-next"></div>
+							<div class="products2__slider-prev"></div>
+						</div>
+						<div class="products2__slider _swiper">
+							<div class="products__item product">
+								<div class="product__item-img _ibg">
+									<img src="img/card.png" alt="card">
+								</div>
+								<div class="product__name">“Классика” белый</div>
+								<div class="product__descr">ФКЛ-6Б</div>
+								<a href="#" class="product__btn button button_mini button_yellow">
+									Заказать
+								</a>
+								<a href="#" class="product__more">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="catalog">
+				<div class="catalog__container _container">
+					<div class="catalog__title title_36">Каталог товаров</div>
+					<div class="catalog__body">
+						<a href="#" class="catalog__item _ibg">
+							<div class="catalog__item-title">Венки</div>
+							<div class="catalog__img">
+								<img src="img/card3.png" alt="category">
+							</div>
+						</a>
+						<a href="#" class="catalog__item _ibg">
+							<div class="catalog__item-title">Венки</div>
+							<div class="catalog__img">
+								<img src="img/card3.png" alt="category">
+							</div>
+						</a>
+						<a href="#" class="catalog__item _ibg">
+							<div class="catalog__item-title">Венки</div>
+							<div class="catalog__img">
+								<img src="img/card3.png" alt="category">
+							</div>
+						</a>
+						<a href="#" class="catalog__item _ibg">
+							<div class="catalog__item-title">Венки</div>
+							<div class="catalog__img">
+								<img src="img/card3.png" alt="category">
+							</div>
+						</a>
+						<a href="#" class="catalog__item _ibg">
+							<div class="catalog__item-title">Венки</div>
+							<div class="catalog__img">
+								<img src="img/card3.png" alt="category">
+							</div>
+						</a>
+						<a href="#" class="catalog__item _ibg">
+							<div class="catalog__item-title">Венки</div>
+							<div class="catalog__img">
+								<img src="img/card3.png" alt="category">
+							</div>
+						</a>
+						<a href="#" class="catalog__item _ibg">
+							<div class="catalog__item-title">Венки</div>
+							<div class="catalog__img">
+								<img src="img/card3.png" alt="category">
+							</div>
+						</a>
+						<a href="#" class="catalog__item _ibg">
+							<div class="catalog__item-title">Венки</div>
+							<div class="catalog__img">
+								<img src="img/card3.png" alt="category">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"],
+[class*=" _icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-copyright:before {
+	content: "\e901";
+ }
+ ._icon-arrow-next:before {
+	content: "\e909";
+	color: #494d4e;
+ }
+ ._icon-arrow-prev:before {
+	content: "\e90a";
+	color: #494d4e;
+ }
+ ._icon-support:before {
+	content: "\e907";
+	color: #fff;
+ }
+ ._icon-24:before {
+	content: "\e900";
+ }
+ ._icon-call:before {
+	content: "\e903";
+ }
+ ._icon-people:before {
+	content: "\e904";
+ }
+ ._icon-phone:before {
+	content: "\e905";
+ }
+ ._icon-search:before {
+	content: "\e906";
+ }
+ ._icon-time:before {
+	content: "\e908";
+ }
+ 
